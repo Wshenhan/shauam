@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>极客数码服务 | 专业低价</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        /* 赛博朋克风格配色 */
+        :root {
+            --bg-color: #0a0a1f;
+            --neon-blue: #00f7ff;
+            --neon-pink: #ff00ff;
+            --text-light: #ffffff;
+        }
+
+        body {
+            background: var(--bg-color);
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            color: var(--text-light);
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            border: 2px solid var(--neon-blue);
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 20px var(--neon-blue);
+        }
+
+        .title {
+            text-align: center;
+            font-size: 2.5em;
+            color: var(--neon-blue);
+            text-shadow: 0 0 10px var(--neon-blue);
+            margin-bottom: 30px;
+        }
+
+        .service-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 25px;
+            margin-bottom: 40px;
+        }
+
+        .service-item {
+            background: rgba(0, 247, 255, 0.1);
+            padding: 15px;
+            border-left: 4px solid var(--neon-pink);
+            transition: transform 0.3s;
+        }
+
+        .service-item:hover {
+            transform: translateY(-5px);
+        }
+
+        .price {
+            color: var(--neon-pink);
+            font-weight: bold;
+            font-size: 1.2em;
+        }
+
+        .contact {
+            text-align: center;
+            margin-top: 40px;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.1);
+        }
+
+        /* 移动端适配 */
+        @media (max-width: 768px) {
+            .service-grid {
+                grid-template-columns: 1fr;
+            }
+            .title {
+                font-size: 1.8em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="title"><i class="fas fa-microchip"></i> 极客数码服务中心</h1>
+        
+        <div class="service-grid">
+            <!-- 服务项目 -->
+            <div class="service-item">
+                <h3><i class="fas fa-video"></i> 视频代剪</h3>
+                <p class="price">起步价 ¥5</p>
+                <p>根据难度精细剪辑</p>
+            </div>
+
+            <div class="service-item">
+                <h3><i class="fas fa-unlock-alt"></i> 手机ROOT</h3>
+                <p class="price">¥40/台</p>
+                <p>小米/真我/OPPO全支持</p>
+            </div>
+
+            <div class="service-item">
+                <h3><i class="fas fa-tachometer-alt"></i> 电脑优化</h3>
+                <p class="price">¥20起</p>
+                <p>远程性能提升方案</p>
+            </div>
+
+            <div class="service-item">
+                <h3><i class="fas fa-redo"></i> 系统重装</h3>
+                <p class="price">¥25起</p>
+                <p>电脑/手机 数据保全</p>
+            </div>
+
+            <div class="service-item">
+                <h3><i class="fas fa-robot"></i> AI处理</h3>
+                <p class="price">¥15起</p>
+                <p>图像定制化服务</p>
+            </div>
+
+            <div class="service-item">
+                <h3><i class="fas fa-search-dollar"></i> 二手代蹲</h3>
+                <p class="price">¥20+佣金</p>
+                <p>手机/平板专业筛选</p>
+            </div>
+        </div>
+
+        <div class="contact">
+            <h3><i class="fas fa-bolt"></i> 24小时在线接单</h3>
+            <p>微信/QQ：<span style="color: var(--neon-pink)">18366270965</span></p>
+            <!-- 二维码区域 -->
+            <img src="your-qrcode.png" alt="扫码联系" width="150" style="margin:15px; border:2px solid var(--neon-blue)">
+        </div>
+    </div>
+</body>
+</html>
